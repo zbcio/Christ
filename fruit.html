@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+	var a = Math.random() + ""; //产生随机数，“ +"" ”是将产生的随机数转换为字符串，这样才能调用下面的charAt()；
+	var rand1 = a.charAt(2); //charAt(2)取字符串的第二位，这样就得到了一个随机数；
+	if (rand1 == 0) {
+		rand1 = 1;
+	}
+	fruits = new Array();
+	fruits[1] = '仁爱';
+	fruits[2] = '喜乐';
+	fruits[3] = '和平';
+	fruits[4] = '忍耐';
+	fruits[5] = '恩慈';
+	fruits[6] = '良善';
+	fruits[7] = '信实';
+	fruits[8] = '温柔';
+	fruits[9] = '节制';
+	var fruit = fruits[rand1];
+	document.write("<h1>恭喜你，获得了<span style='color:red'>" + fruit + "</span>果子</h1>");
+</script>
+<title>扫码获取果子</title>
+</head>
+<body>
+</body>
+</html>
